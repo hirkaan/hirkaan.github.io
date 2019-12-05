@@ -11,10 +11,11 @@
 })(jQuery); // end of jQuery name space
 
 
+
 // Slider
 $(document).ready(function(){
   $('.slider').slider({
-    indicators: true,
-    height:400,
+    indicators: false,
+    height:$(window).height(),
   });
 });
