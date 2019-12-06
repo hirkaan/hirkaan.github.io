@@ -86,28 +86,6 @@ body{
   background-color: #2376ae;
 }
 
-.parallax-container{
-  height: 500px;
-}
-
-#main-counter-parallax img{
-  filter: brightness(25%);
-}
-
-#main-counter-parallax{
-  color: #eee;
-}
-
-.counter-box{
-  margin: 10rem 0;
-  font-size: larger;
-}
-
-.counter-box-border{
-  border-right: 1px solid rgba( 255,255,255, 0.2);
-  min-height: 100%;
-}
-
 #latest_posts_parallax{
   height: 900px;
   padding: 5rem 4rem;
@@ -121,4 +99,47 @@ body{
 
 #latest_posts_parallax .parallax{
   filter: brightness(20%);
+}
+
+#counter{
+  background-image: linear-gradient(270deg, #2376ae 0%, #c16ecf   100%) !important;
+  color: #eee;
+}
+
+#counter{
+  padding: 3rem 0;
+}
+
+.counter-box{
+  padding: 4rem 0 !important;
+  font-size: larger;
+}
+
+.counter-box-border{
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+  .counter-box{
+    margin: 5rem 0;
+    padding: 0 !important;
+    font-size: larger;
+  }
+  
+  .counter-box-border{
+    border-right: 1px solid rgba( 255,255,255, 0.5);
+    border-top: none;
+  }
 }
