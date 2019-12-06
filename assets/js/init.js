@@ -75,3 +75,31 @@ $(function () {
   startCount();
 });
 
+
+
+// OWL Carousel
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    
+    rtl:true,
+    loop:true,
+    margin:10,
+    nav:false,
+    
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+});
