@@ -87,8 +87,8 @@ body{
 }
 
 #latest_posts_parallax{
-  height: 900px;
-  padding: 5rem 4rem;
+  height: 800px;
+  padding: 5rem 1rem;
   color: #eee;
 }
 
@@ -141,5 +141,10 @@ body{
   .counter-box-border{
     border-right: 1px solid rgba( 255,255,255, 0.5);
     border-top: none;
+  }
+
+  #latest_posts_parallax{
+    height: 900px !important;
+    padding: 5rem 4rem !important;
   }
 }
