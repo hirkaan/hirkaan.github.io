@@ -66,7 +66,7 @@ body{
 }
 
 #main-about-desc{
-  padding: 5rem 0;
+  padding: 12rem 0;
   font-size: 1.3rem;
   text-align: justify;
 }
@@ -84,4 +84,3 @@ body{
 #about-more-btn:hover{
   background-color: #2376ae;
 }
-
