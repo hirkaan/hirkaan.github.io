@@ -60,12 +60,12 @@ body{
   color: #eee !important;
 }
 
-#main-about{
+#about{
   background-image: linear-gradient(270deg, #2376ae 0%, #c16ecf   100%) !important;
   color: #eee;
 }
 
-#main-about-desc{
+#about-desc{
   padding: 12rem 0;
   font-size: 1.2rem;
   line-height: 3;
