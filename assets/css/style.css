@@ -67,7 +67,8 @@ body{
 
 #main-about-desc{
   padding: 12rem 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 3;
   text-align: justify;
 }
 
@@ -84,3 +85,26 @@ body{
 #about-more-btn:hover{
   background-color: #2376ae;
 }
+
+.parallax-container{
+  height: 500px;
+}
+
+#main-counter-parallax img{
+  filter: brightness(25%);
+}
+
+#main-counter-parallax{
+  color: #eee;
+}
+
+.counter-box{
+  margin: 10rem 0;
+  font-size: larger;
+}
+
+.counter-box-border{
+  border-right: 1px solid rgba( 255,255,255, 0.2);
+  min-height: 100%;
+}
+
