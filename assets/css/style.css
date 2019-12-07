@@ -119,7 +119,15 @@ body{
   border: none;
 }
 
+#main-footer{
+  background-image: linear-gradient(270deg, #2376ae 0%, #c16ecf   100%) !important;
+  padding: 4rem 0;
+  color: #eee;
+}
 
+#main-footer h4{
+  margin: 2rem 0;
+}
 
 
 
@@ -147,7 +155,7 @@ body{
 }
 
 #partners h3{
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 #partners .col{
