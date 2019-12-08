@@ -9,24 +9,26 @@
             </div>
             </li>
             <li>
-            <img src="/assets/img/012.jpg"> <!-- random image -->
+            <!--    show last article   -->
+            <img src="{% if site.posts.first.img %}{{ site.posts.first.img }}{% else %}/assets/img/no-img.jpg{% endif %}"> <!-- random image -->
             <div class="caption right-align">
-                <h3>Right Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                <h3>{{ site.posts.first.title }}</h3>
+                <h5 class="light grey-text text-lighten-3">{{ site.posts.first.content | truncatewords:15 }}</h5>
+                <a href="{{ site.posts.first.url }}" class="btn-flat grey-text text-lighten-4 waves-effect waves-light btn-flat-grey">کامل بخوانید</a>
+            </div>
+            </li>
+            <li>
+            <img src="/assets/img/012.jpg"> <!-- random image -->
+            <div class="caption center-align">
+                <h3>جنگل های شمال ایران ، تنها باقیمانده جنگل های هیرکانی است</h3>
+                <h5 class="light grey-text text-lighten-3">تاکنون بیش از ۵۱ درصد آن منقرض‌شده و تنها ۱۰ درصد آن در حال حاضر مورد حفاظت قرار می‌گیرد.</h5>
             </div>
             </li>
             <li>
             <img src="/assets/img/016.jpg"> <!-- random image -->
-            <div class="caption left-align">
-                <h3>Left Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-            </li>
-            <li>
-            <img src="/assets/img/018.jpg"> <!-- random image -->
-            <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <div class="caption right-align">
+                <h3>۳۰ تا ۷۰ سال</h3>
+                <h5 class="light grey-text text-lighten-3">از عمر این جنگل ها باقی مانده ! جنگل هایی که به عقیده زمین شناسان ، دایناسور ها را دیده اند .</h5>
             </div>
             </li>
         </ul>
