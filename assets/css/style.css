@@ -85,7 +85,7 @@ body{
 }
 
 #latest_posts_parallax{
-  height: 800px;
+  height: 900px;
   padding: 5rem 1rem;
   color: #eee;
 }
@@ -127,7 +127,10 @@ body{
   margin: 2rem 0;
 }
 
-
+.card i{
+  position: fixed;
+  left: 1rem;
+}
 
 
 
@@ -201,7 +204,12 @@ body{
 
 
 
-
+@media screen and (min-width: 400px) and (max-width: 992px) {
+  #latest_posts_parallax{
+    height: 950px !important;
+    padding: 5rem 4rem !important;
+  }
+}
 
 
 @media screen and (min-width: 992px) {
@@ -217,7 +225,7 @@ body{
   }
 
   #latest_posts_parallax{
-    height: 900px !important;
+    height: 1000px !important;
     padding: 5rem 4rem !important;
   }
 }

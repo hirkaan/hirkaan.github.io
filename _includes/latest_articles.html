@@ -8,24 +8,38 @@
         </div>
 
         <div class="owl-carousel owl-theme">
+
+        {% for post in site.posts  | limit: 7 %}
+
             <div class="item">
-                <img src="assets/img/054.jpg">
+                  <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    {% if post.img %%}
+                    <img class="activator" src="/{{ post.img }}">
+                    {% else %}
+                    <img class="activator" src="/assets/img/no-img.jpg">
+                    {% endif %}
+                    </div>
+                    <div class="card-content">
+
+                    <span class="card-title activator left-align grey-text text-darken-4"><i class="fa fa-ellipsis-v"></i></span>
+                    <span class="card-title activator grey-text text-darken-4">{{ post.title }}</span>
+
+                    <p><a href="{{ post.url }}">ادامه مطلب</a></p>
+                    </div>
+
+                    <div class="card-reveal grey-text text-darken-4">
+                    <span class="card-title grey-text text-darken-4">{{ post.title }}<i class="fa fa-close"></i></span>
+                    <p>
+                        {{ post.excerpt }}
+                    </p><br>
+                    <p><a href="{{ post.url }}">ادامه مطلب</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img src="assets/img/018.jpg">
-            </div>
-            <div class="item">
-                <img src="assets/img/016.jpg">
-            </div>
-            <div class="item">
-                <img src="assets/img/054.jpg">
-            </div>
-            <div class="item">
-                <img src="assets/img/018.jpg">
-            </div>
-            <div class="item">
-                <img src="assets/img/016.jpg">
-            </div>
+
+        {% endfor %}
+
         </div>
 
 
