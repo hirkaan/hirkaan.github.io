@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "خوش آمدید"
-date:   2019-12-05 12:11:16 +0330
+title:  "مقاله دوم"
+date:   2019-12-07 12:11:16 +0330
 categories: jekyll update
+img: 'assets/img/054.jpg'
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
