@@ -156,14 +156,42 @@ body{
   height: 20rem;
 }
 
-#articles .card .btn-flat{
+.btn-flat-grey{
   font-size: larger;
   background-color: rgba( 0, 0, 0, 0.7);
 }
 
-#articles .card .btn-flat:hover{
+.btn-flat-grey:hover{
   background-color: #2376ae;
 }
+
+#contribute{
+  padding: 5rem 0;
+
+}
+
+#contribute h4{
+  margin: 5rem 0;
+}
+
+#contribute img{
+  object-fit: cover;
+  width: 65%;
+  display: block;
+  margin: auto;
+}
+
+#contribute .btn-flat-grey{
+  margin: 4rem 0 0;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -253,5 +281,9 @@ body{
   #latest_posts_parallax{
     height: 1000px !important;
     padding: 5rem 4rem !important;
+  }
+
+  #contribute img{
+    width: 30%;
   }
 }
