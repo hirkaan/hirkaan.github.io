@@ -132,18 +132,38 @@ body{
   left: 1rem;
 }
 
-.card img{
+#latest .card img{
   object-fit: cover;
   width: 100%;
   height: 20rem;
 }
 
-#page{
+#page, #articles{
   padding: 3rem 0;
 }
 
+#articles .card{
+  margin: 1rem 0 3rem 0;
+}
 
+#articles .card .card-title a{
+  color: #333;
+}
 
+#articles .card img{
+  object-fit: cover;
+  width: 100%;
+  height: 20rem;
+}
+
+#articles .card .btn-flat{
+  font-size: larger;
+  background-color: rgba( 0, 0, 0, 0.7);
+}
+
+#articles .card .btn-flat:hover{
+  background-color: #2376ae;
+}
 
 
 
