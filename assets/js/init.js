@@ -84,10 +84,11 @@ $(document).ready(function(){
     rtl:true,
     loop:true,
     margin:10,
+    dots:true,
     nav:false,
-    
+
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:4000,
     autoplayHoverPause:true,
 
     responsive:{
