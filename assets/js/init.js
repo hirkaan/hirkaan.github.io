@@ -104,3 +104,39 @@ $(document).ready(function(){
     }
 })
 });
+
+
+
+// SimpleParallax configs
+var image = document.getElementsByClassName('bg1');
+new simpleParallax(image, {
+  orientation: 'up left',
+  scale: 2,
+  delay: 1,
+});
+
+var image = document.getElementsByClassName('bg2');
+new simpleParallax(image, {
+  orientation: 'up right',
+  scale: 2,
+  delay: 1,
+});
+
+var image = document.getElementsByClassName('bg3');
+new simpleParallax(image, {
+  orientation: 'up left',
+  delay: 2,
+});
+
+var image = document.getElementsByClassName('bg4');
+new simpleParallax(image, {
+  orientation: 'up',
+  scale: 1.6,
+  delay: 2,
+});
+
+var image = document.getElementsByClassName('bg5');
+new simpleParallax(image, {
+  orientation: 'up right',
+  delay: 1,
+});
