@@ -212,8 +212,8 @@ header .bg5 {
 
 #mob-nav {
 	position: fixed;
-	top: 3rem;
-	right: 3rem;
+	top: 2rem;
+	right: 2rem;
 	z-index: 99;
 }
 
@@ -234,10 +234,10 @@ header .bg5 {
 
 header #logo-mob {
 	position: absolute;
-	height: 8rem;
+	height: 5rem;
 	object-fit: contain !important;
 	transition: 0.4s;
 	left: 2rem;
-	top: 3rem;
+	top: 2rem;
 	z-index: 6;
 }
