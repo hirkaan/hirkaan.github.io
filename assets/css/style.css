@@ -112,19 +112,132 @@ header .bg5 {
 }
 
 
+ /* Create a sticky/fixed navbar */
+ #navbar {
+	overflow: hidden;
+	background-color: none;
+	padding: 5rem 2rem; /* Large padding which will shrink on scroll (using JS) */
+	transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+	position: fixed; /* Sticky/fixed navbar */
+	width: 100%;
+	top: 0; /* At the top */
+	z-index: 99;
+  }
+  
+  /* Style the logo */
+  #navbar #logo {
+	height: 8rem;
+	object-fit: contain !important;
+	transition: 0.4s;
+	float: left;
+	margin-left: 3rem;
+  }
+  
+  /* Style the active/current link */
+  #navbar a.active {
+	background-color: dodgerblue;
+	color: white;
+  }
+  
+  /* Display some links to the right */
+  #navbar-right {
+	float: right;
+  }
 
 
 
+  .nav {
+	text-transform: uppercase;
+	text-align: center;
+  }
+  
+  .nav * {
+	box-sizing: border-box;
+	transition: all .35s ease;
+  }
+  
+  .nav li {
+	display: inline-block;
+	list-style: outside none none;
+	margin: .5rem 1rem;
+	padding: 0;
+  }
+  
+  .nav a {
+	padding: .4rem .8rem;
+	color: #023b3f;
+	position: relative;
+	text-decoration: none;
+	font-size: 1.5rem;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+	content: '';
+	height: 1rem;
+	width: 1rem;
+	position: absolute;
+	transition: all .35s ease;
+	opacity: 0;
+  }
+  
+  .nav a::before {
+	content: '';
+	right: 0;
+	top: 0;
+	border-top: 3px solid #3E8914;
+	border-right: 3px solid #2E640F;
+	transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+	content: '';
+	left: 0;
+	bottom: 0;
+	border-bottom: 3px solid #2E640F;
+	border-left: 3px solid #3E8914;
+	transform: translate(100%, -50%)
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+	transform: translate(0,0);
+	opacity: 1;
+  }
+  
+  .nav a:hover {
+	color: #2E640F;
+}
 
 
+#mob-nav {
+	position: fixed;
+	top: 3rem;
+	right: 3rem;
+	z-index: 99;
+}
 
+#mob-nav a {
+	font-size: 1.5rem;
+	color: #eee;
+	background-color: #023b3f;
+	padding: 0 0.8rem;
+	border-radius: 20%;
+	transition: all 0.3s;
+}
 
+#mob-nav a:hover {
+	color: #023b3f;
+	background-color: #eee;
+	transition: all 0.3s;
+}
 
-
-
-
-.aref {
-	height: 50vh;
-	z-index: 9;
-	background-color: blueviolet;
+header #logo-mob {
+	position: absolute;
+	height: 8rem;
+	object-fit: contain !important;
+	transition: 0.4s;
+	left: 2rem;
+	top: 3rem;
+	z-index: 6;
 }

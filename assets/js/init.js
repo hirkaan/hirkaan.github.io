@@ -140,3 +140,24 @@ new simpleParallax(image, {
   orientation: 'up right',
   delay: 1,
 });
+
+
+
+// Navbar size change on scroll
+// When the user scrolls down 100px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("navbar").style.padding = "1rem 2rem";
+    document.getElementById("navbar").style.backgroundColor = "#eee";
+    document.getElementById("logo").style.height = "4rem";
+  } else {
+    document.getElementById("navbar").style.padding = "5rem 2rem";
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+    document.getElementById("logo").style.height = "8rem";
+  }
+} 
+
+
+
