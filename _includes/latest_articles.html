@@ -39,7 +39,12 @@
     <div class="container articles-btn">
         <div class="row">
             <div class="col s12 l12 center">
-                <a href="{{ site.url }}/articles" class=""><img src="{{ site.url }}/assets/img/articles_banner.svg"></a>
+                <a href="{{ site.url }}/articles" class="">
+                    <picture>
+                        <source srcset="{{ site.url }}/assets/img/articles_banner.png">
+                        <img src="{{ site.url }}/assets/img/articles_banner.png" alt="all articles">
+                    </picture>
+                </a>
             </div>
         </div>
     </div>
