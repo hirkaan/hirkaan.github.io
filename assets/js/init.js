@@ -83,7 +83,7 @@ $(document).ready(function(){
     
     rtl:true,
     loop:true,
-    margin:10,
+    margin:25,
     dots:true,
     nav:false,
 
@@ -150,11 +150,13 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     document.getElementById("navbar").style.padding = "1rem 2rem";
-    document.getElementById("navbar").style.backgroundColor = "#eee";
+    document.getElementById("navbar").style.backgroundImage = "linear-gradient(0deg, #eee, #fff)";
+    document.getElementById("navbar").style.boxShadow = "#bbb 0rem 0rem 0.5rem";
     document.getElementById("logo").style.height = "4rem";
   } else {
     document.getElementById("navbar").style.padding = "5rem 2rem";
-    document.getElementById("navbar").style.backgroundColor = "transparent";
+    document.getElementById("navbar").style.backgroundImage = "none";
+    document.getElementById("navbar").style.boxShadow = "none";
     document.getElementById("logo").style.height = "8rem";
   }
 } 

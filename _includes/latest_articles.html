@@ -1,0 +1,47 @@
+<section id="articles">
+
+    <div class="container">
+        <div class="row">
+            {% for post in site.posts %}
+                <div class="col l12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12 m12 l4 article-pic">
+                                    {% if post.img %}
+                                        <picture>
+                                            <source srcset="{{site.url}}{{ post.img }}">
+                                            <img src="{{site.url}}{{ post.img }}" alt="{{ post.title }}" class="img-cover">
+                                        </picture>
+                                    {% else %}
+                                        <picture>
+                                            <source srcset="{{site.url}}/assets/img/no-img.svg">
+                                            <img src="{{site.url}}/assets/img/no-img.svg" alt="{{ post.title }}" class="img-cover">
+                                        </picture>
+                                    {% endif %} 
+                                </div>
+                                <div class="col s12 m12 l8 article-text">
+                                    <span class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+                                    <p>
+                                        {{ post.excerpt }}
+                                    </p>
+                                    <div class="clearfix"></div>
+                                    <a href="{{ post.url }}" class="grey-btn">بیشتر بخوانید ...</a>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container articles-btn">
+        <div class="row">
+            <div class="col s12 l12 center">
+                <a href="{{ site.url }}/articles" class="btn-gr">صفحه مقاله ها</a>
+            </div>
+        </div>
+    </div>
+
+</section>

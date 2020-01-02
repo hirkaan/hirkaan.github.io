@@ -293,3 +293,72 @@ header #logo-mob {
 		width: 10vw !important;		
 	}
 }
+
+
+section#articles {
+	padding: 6rem 0;
+}
+
+.article-pic {
+	float: right;
+	width: 30%;
+}
+
+.article-text {
+	float: left;
+	width: 70%;
+}
+
+section#articles .container .row .col:nth-child(even) .article-pic {
+	float: left !important;
+}
+
+section#articles .container .row .col:nth-child(even) .article-text {
+	float: right !important;
+}
+
+.article-text .grey-btn {
+	display: block;
+	width: 100%;
+	background-color: #eee;
+	color: #023b3f;
+	border-radius: 0.2rem;
+	padding: 0.7rem;
+	margin-top: 2rem;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+.article-text .grey-btn:hover {
+	background-color: #023b3f;
+	color: #eee;
+	transition: all 0.3s;
+}
+
+span.card-title a {
+	color: #023b3f;
+	display: block;
+	margin: auto;
+}
+
+.articles-btn {
+	margin-top: 4rem;
+}
+
+.btn-gr {
+	display: block;
+	background-color: #023b3f;
+	color: #eee;
+	border-radius: 0.2rem;
+	padding: 0.7rem;
+	font-size: 1.2rem;
+	transition: all 0.3s;
+}
+
+.btn-gr:hover {
+	background-color: #eee;
+	color: #023b3f;
+	transition: all 0.3s;
+}
