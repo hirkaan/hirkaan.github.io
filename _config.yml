@@ -21,7 +21,7 @@
 title: هیرکان
 email: hirkaan.ir@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  جنگلهای هیرکانی را بهتر بشناسیم
+  درباره جنگلهای هیرکانی
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hirkaan.ir" # the base hostname & protocol for your site, e.g. http://example.com
 project_url: "https://github.com/hirkaan/hirkaan.github.io"

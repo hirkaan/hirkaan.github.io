@@ -107,42 +107,6 @@ $(document).ready(function(){
 
 
 
-// SimpleParallax configs
-var image = document.getElementsByClassName('bg1');
-new simpleParallax(image, {
-  orientation: 'up left',
-  scale: 2,
-  delay: 1,
-});
-
-var image = document.getElementsByClassName('bg2');
-new simpleParallax(image, {
-  orientation: 'up right',
-  scale: 2,
-  delay: 1,
-});
-
-var image = document.getElementsByClassName('bg3');
-new simpleParallax(image, {
-  orientation: 'up left',
-  delay: 2,
-});
-
-var image = document.getElementsByClassName('bg4');
-new simpleParallax(image, {
-  orientation: 'up',
-  scale: 1.6,
-  delay: 2,
-});
-
-var image = document.getElementsByClassName('bg5');
-new simpleParallax(image, {
-  orientation: 'up right',
-  delay: 1,
-});
-
-
-
 // Navbar size change on scroll
 // When the user scrolls down 100px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
@@ -154,7 +118,7 @@ function scrollFunction() {
     document.getElementById("navbar").style.boxShadow = "#bbb 0rem 0rem 0.5rem";
     document.getElementById("logo").style.height = "4rem";
   } else {
-    document.getElementById("navbar").style.padding = "5rem 2rem";
+    document.getElementById("navbar").style.padding = "2rem 2rem";
     document.getElementById("navbar").style.backgroundImage = "none";
     document.getElementById("navbar").style.boxShadow = "none";
     document.getElementById("logo").style.height = "8rem";

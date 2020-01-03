@@ -4,12 +4,16 @@
 
     <div class="clearfix"></div>
 
-    <img src="assets/img/bg0.svg" class="sky img-cover">
-    <img src="assets/img/bg1.svg" class="bg1">
-    <img src="assets/img/bg2.svg" class="bg2">
-    <img src="assets/img/bg3.svg" class="bg3">
-    <img src="assets/img/bg4.svg" class="bg4">
-    <img src="assets/img/bg5.svg" class="bg5">
+    <picture>
+      <source media="(orientation: landscape)" srcset="assets/img/bg_bg.svg">
+      <source media="(orientation: portrait)" srcset="assets/img/bg_bg_mob.svg">
+      <img src="assets/img/bg_bg.svg" class="bg-bg">
+    </picture>
+    <picture>
+      <source media="(orientation: landscape)" srcset="assets/img/bg_tree.svg">
+      <source media="(orientation: portrait)" srcset="assets/img/bg_sky_mob.svg">
+      <img src="assets/img/bg_tree.svg" class="bg-tree">
+    </picture>
 
     <img src="{{ site.url }}/assets/img/logo_img.svg" id="logo-mob" class="hide-on-large-only" alt="logo">
 
@@ -17,7 +21,17 @@
       <h1 class="center">
         {{ site.title }}
       </h1>
+      <h2 class="center">
+        {{ site.description }}
+      </h2>
+      <div class="content">
+        <p>
+          جنگل های شمال ایران ، تنها باقیمانده جنگل های هیرکانی است . تاکنون بیش از ۵۱ درصد آن از بین رفته و تنها ۱۰ درصد آن در حال حاضر مورد حفاظت قرار می‌گیرد.
+        </p>
+        <a href="{{ site.url }}/articles" class="right btn-more"><span>بیشتر بخوانید </span></a>
+      </div>
     </div>
+
     <a href="#articles">
     <div id="sitedesc">
       <h2 class="center">

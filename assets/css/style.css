@@ -59,64 +59,55 @@ header {
 	height: 100vh !important;
 	width: 100%;
 	overflow: hidden;
+	background-color: #fafafa;
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-header .sky {
-	z-index: 0;
-}
-
-header .bg1 {
+header .bg-bg {
 	position: absolute;
-	bottom: 10rem !important;
-	right: 0 !important;
-	width: 100% !important;
+	left: 0;
+	bottom: 0;
 	object-fit: contain;
+	object-position: right;
+	height: 100%;
 	z-index: 1;
 }
 
-header .bg2 {
+header .bg-tree {
 	position: absolute;
-	bottom: 10rem !important;
-	right: 0 !important;
-	width: 100% !important;
+	left: 0;
+	top: 0;
 	object-fit: contain;
+	object-position: left;
+	height: 100%;
 	z-index: 2;
 }
 
-header .bg3 {
-	position: absolute;
-	bottom: 4rem !important;
-	left: 0 !important;
-	width: 100% !important;
-	object-fit: contain;
-	object-position: right;
-	z-index: 3;
+@media only screen and (orientation:portrait) {
+	header .bg-bg {
+		width: 100vw !important;
+		object-position: bottom;
+		object-fit: contain;
+		bottom: 0 !important;
+		left: 0 !important;
+	}
+	header .bg-tree {
+		width: 100vw;
+		object-position: top;
+		object-fit: contain;
+		bottom: 0 !important;
+		left: 0 !important;
+		z-index: 0 !important;
+	}
 }
-
-header .bg4 {
-	position: absolute;
-	bottom: 2rem !important;
-	right: 0 !important;
-	width: 100% !important;
-	object-fit: contain;
-	z-index: 4;
-}
-
-header .bg5 {
-	position: absolute;
-	bottom: 0 !important;
-	right: 0 !important;
-	width: 100% !important;
-	object-fit: contain;
-	z-index: 5;
-}
-
 
  /* Create a sticky/fixed navbar */
  #navbar {
 	overflow: hidden;
 	background-color: none;
-	padding: 5rem 2rem; /* Large padding which will shrink on scroll (using JS) */
+	padding: 2rem 2rem; /* Large padding which will shrink on scroll (using JS) */
 	transition: 0.4s; /* Adds a transition effect when the padding is decreased */
 	position: fixed; /* Sticky/fixed navbar */
 	width: 100%;
@@ -165,7 +156,7 @@ header .bg5 {
   
   .nav a {
 	padding: .4rem .8rem;
-	color: #023b3f;
+	color: #885026;
 	position: relative;
 	text-decoration: none;
 	font-size: 1.5rem;
@@ -244,10 +235,59 @@ header #logo-mob {
 
 #sitetitle {
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	top: 20vh;
+	right: 0;
 	z-index: 6;
-	color: #023b3f;
+	color: #309375;
+}
+
+#sitetitle h2 {
+	font-size: 1.5rem;
+}
+
+#sitetitle .content {
+	color: #444;
+	width: 100%;
+	text-align: justify;
+	margin-right: 1rem;
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 0.3rem;
+}
+
+.btn-more {
+	color: #fafafa;
+	background-image: linear-gradient(135deg, #309375, #08513d);
+	padding: 0.4rem 1.5rem;
+	border-radius: 0.3rem;
+	transition: all 0.3s;
+}
+
+.btn-more span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.btn-more span:after {
+	font-family: Arial, Helvetica, sans-serif;
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: -20px;
+	transition: 0.5s;
+}
+
+.btn-more:hover span {
+	padding-left: 25px;
+}
+  
+.btn-more:hover span:after {
+	opacity: 1;
+	left: 0;
 }
 
 #sitedesc {
@@ -284,9 +324,15 @@ header #logo-mob {
 	margin: auto;
 }
 
-@media only screen and (max-width:992px) {
+@media only screen and (orientation:portrait) {
 	#sitetitle {
-		top: 27vh !important;
+		color: #86512c !important;
+		top: 15vh !important;
+		width: 100% !important;
+	}
+
+	#sitetitle .content {
+		display: none !important;
 	}
 
 	#sitedesc img {
