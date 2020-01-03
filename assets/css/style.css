@@ -124,12 +124,6 @@ header .bg-tree {
 	margin-left: 3rem;
   }
   
-  /* Style the active/current link */
-  #navbar a.active {
-	background-color: dodgerblue;
-	color: white;
-  }
-  
   /* Display some links to the right */
   #navbar-right {
 	float: right;
@@ -176,8 +170,8 @@ header .bg-tree {
 	content: '';
 	right: 0;
 	top: 0;
-	border-top: 3px solid #3E8914;
-	border-right: 3px solid #2E640F;
+	border-top: 3px solid #309375;
+	border-right: 3px solid #309375;
 	transform: translate(-100%, 50%);
   }
   
@@ -185,8 +179,8 @@ header .bg-tree {
 	content: '';
 	left: 0;
 	bottom: 0;
-	border-bottom: 3px solid #2E640F;
-	border-left: 3px solid #3E8914;
+	border-bottom: 3px solid #309375;
+	border-left: 3px solid #309375;
 	transform: translate(100%, -50%)
   }
   
@@ -197,7 +191,7 @@ header .bg-tree {
   }
   
   .nav a:hover {
-	color: #2E640F;
+	color: #309375;
 }
 
 
@@ -211,15 +205,15 @@ header .bg-tree {
 #mob-nav a {
 	font-size: 1.5rem;
 	color: #eee;
-	background-color: #023b3f;
+	background-color: #309375;
 	padding: 0 0.8rem;
 	border-radius: 20%;
 	transition: all 0.3s;
 }
 
 #mob-nav a:hover {
-	color: #023b3f;
-	background-color: #eee;
+	color: #309375;
+	background-color: #fafafa;
 	transition: all 0.3s;
 }
 
@@ -235,7 +229,7 @@ header #logo-mob {
 
 #sitetitle {
 	position: absolute;
-	width: 50%;
+	width: 40%;
 	top: 20vh;
 	right: 0;
 	z-index: 6;
@@ -252,8 +246,15 @@ header #logo-mob {
 	text-align: justify;
 	margin-right: 1rem;
 	padding: 1rem;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: #fafafa;
 	border-radius: 0.3rem;
+}
+
+#sitetitle .content p {
+	background-color: #fafafa !important;
+	background-image: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 .btn-more {
@@ -290,40 +291,6 @@ header #logo-mob {
 	left: 0;
 }
 
-#sitedesc {
-	position: absolute;
-	width: 100%;
-	bottom: 0rem;
-	padding-bottom: 1rem;
-	z-index: 6;
-	color: #eee;
-	background-image: linear-gradient(0deg, #000, transparent);
-	transition: all 0.3s;
-}
-
-#sitedesc a {
-	color: #eee;
-	transition: all 0.3s;
-
-}
-
-#sitedesc a:hover {
-	color: #fff;
-	transition: all 0.3s;
-
-}
-
-#sitedesc h2 {
-	font-size: 1.5rem;
-}
-
-#sitedesc img {
-	object-fit: contain;
-	width: 5vw;
-	display: block;
-	margin: auto;
-}
-
 @media only screen and (orientation:portrait) {
 	#sitetitle {
 		color: #86512c !important;
@@ -334,18 +301,9 @@ header #logo-mob {
 	#sitetitle .content {
 		display: none !important;
 	}
-
-	#sitedesc img {
-		width: 10vw !important;		
-	}
 }
 
-
 section#articles {
-	background-image: url('../img/bgdown_b.svg');
-	background-size: contain;
-	background-position: top;
-	background-repeat: no-repeat;
 	padding: 7rem 0 3rem;
 }
 
