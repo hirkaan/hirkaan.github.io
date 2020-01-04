@@ -304,6 +304,20 @@ header #logo-mob {
 	}
 }
 
+@media only screen and (min-width:1200px) {
+	#sitetitle {
+		top: 15vh
+	}
+
+	#sitetitle h1 {
+		font-size: 6rem;
+	}
+
+	#sitetitle h2 {
+		font-size: 2rem;
+	}
+}
+
 section#articles {
 	padding: 7rem 0 3rem;
 }
