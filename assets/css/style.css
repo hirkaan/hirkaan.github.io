@@ -65,7 +65,7 @@ header {
 	background-repeat: no-repeat;
 }
 
-header .bg-bg {
+header .layer1 {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -75,7 +75,7 @@ header .bg-bg {
 	z-index: 1;
 }
 
-header .bg-tree {
+header .layer2 {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -86,14 +86,14 @@ header .bg-tree {
 }
 
 @media only screen and (orientation:portrait) {
-	header .bg-bg {
+	header .layer1 {
 		width: 100vw !important;
 		object-position: bottom;
 		object-fit: contain;
 		bottom: 0 !important;
 		left: 0 !important;
 	}
-	header .bg-tree {
+	header .layer2 {
 		width: 100vw;
 		object-position: top;
 		object-fit: contain;
