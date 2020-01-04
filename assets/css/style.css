@@ -265,6 +265,11 @@ header #logo-mob {
 	transition: all 0.3s;
 }
 
+.btn-more:hover {
+	box-shadow: inset #444 0px 0px 0.5rem;
+	transition: all 0.3s;
+}
+
 .btn-more span {
 	cursor: pointer;
 	display: inline-block;
@@ -340,25 +345,14 @@ section#articles .container .row .col:nth-child(even) .article-text {
 	float: right !important;
 }
 
-.article-text .grey-btn {
-	display: block;
+.article-text .more {
+	padding: 2rem 0 0 0;
 	width: 100%;
-	background-color: #fff;
-	color: #023b3f;
-	box-shadow: inset #023b3f 0 0 0.3rem;
-	border-radius: 0.2rem;
-	padding: 0.7rem;
-	margin-top: 2rem;
 	text-align: center;
-	font-size: 1.2rem;
-	font-weight: bold;
-	transition: all 0.3s;
 }
 
-.article-text .grey-btn:hover {
-	background-color: #023b3f;
-	color: #eee;
-	transition: all 0.3s;
+.article-text .more a {
+	margin-top: 1rem;
 }
 
 span.card-title a {

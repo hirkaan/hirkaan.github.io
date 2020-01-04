@@ -32,6 +32,11 @@
           <p>
              ۳۰ تا ۷۰ سال از عمر این جنگل ها باقی مانده ! جنگل هایی که به عقیده زمین شناسان ، دایناسور ها را دیده اند 
           </p>
+          {% for post in site.posts %}
+          <p>
+            {{ post.title }}
+          </p>
+          {% endfor %}
         </div>
         <a href="{{ site.url }}/articles" class="right btn-more"><span>بیشتر بخوانید </span></a>
       </div>
